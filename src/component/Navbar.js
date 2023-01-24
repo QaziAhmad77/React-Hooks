@@ -6,7 +6,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Navbar
+            Increment And Decrement number
           </a>
           <button
             className="navbar-toggler"
@@ -55,18 +55,12 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">
-                  Disabled
-                </a>
-              </li>
             </ul>
-            <form className="d-flex">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success" type="submit">
-                Search
+            <div>
+              <button disabled={true} className="btn-primary">
+                Your Balance: 10000
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </nav>
