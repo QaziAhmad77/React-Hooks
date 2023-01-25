@@ -69,8 +69,7 @@ body {
 }
 .button:hover::after {
   content: "I'M GLOWING";
-  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #82bedc, 0 0 30px #82bedc,
-    0 0 40px #82bedc, 0 0 50px #82bedc, 0 0 60px #82bedc;
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #82bedc, 0 0 30px #82bedc, 0 0 40px #82bedc, 0 0 50px #82bedc, 0 0 60px #82bedc;
 }
 
 .button2 {
@@ -173,9 +172,9 @@ body {
   }
 }
 
-P {
+/* P {
   color: #fff;
   text-align: center;
   font-size: 60px;
   margin-bottom: 50px;
-}
+} */

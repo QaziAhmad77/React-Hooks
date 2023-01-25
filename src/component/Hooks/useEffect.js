@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 
-const UseEffect = () => {
+const UseEffect = (props) => {
   // const initialData = 15;
   const [myNum, setMyNum] = useState(0);
 
@@ -12,13 +12,15 @@ const UseEffect = () => {
   return (
     <>
       <div className="center_div">
-        <p>{myNum}</p>
-        <div class="button2" onClick={() => setMyNum(myNum + 1)}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          INCR
+        <p className={`text-${props.mode === "black" ? "black" : "white"} text-center display-4 mt-3`}>{myNum}</p>
+        <div className={`d-flex justify-content-center align-items-center`}>
+          <div class="button2" onClick={() => setMyNum(myNum + 1)}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            INCR
+          </div>
         </div>
       </div>
     </>
