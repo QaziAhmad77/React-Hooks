@@ -1,15 +1,11 @@
-import Navbar from "./component/Navbar";
-import Shop from "./component/Shop";
+import React from "react";
+// import Resturant from "./component/Basics/Resturant";cd 
+// import UseState from "./component/Hooks/useState";
+// import UseEffect from "./component/Hooks/useEffect";
+import UseReducer from "./component/Hooks/useReducer";
 
-function App() {
-  return (
-    <>
-      <Navbar />
-      <div className="container">
-        <Shop />
-      </div>
-    </>
-  );
-}
+const App = () => {
+  return <UseReducer />;
+};
 
 export default App;
