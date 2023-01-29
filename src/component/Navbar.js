@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 const Navbar = (props) => {
   let location = useLocation();
@@ -25,6 +25,21 @@ const Navbar = (props) => {
           <li className="nav-item">
             <Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/useReducer">
               useReducer
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className={`nav-link ${location.pathname === "/useParams" ? "active" : ""}`} to="/useParams">
+              useParams
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className={`nav-link ${location.pathname === "/useLocation" ? "active" : ""}`} to="/useLocation">
+              useLocation
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className={`nav-link ${location.pathname === "/useNavigate" ? "active" : ""}`} to="/useNavigate">
+              useNavigate
             </Link>
           </li>
         </ul>
