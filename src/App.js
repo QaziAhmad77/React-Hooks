@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UseState from "./component/Hooks/useState";
 import UseEffect from "./component/Hooks/useEffect";
 import UseReducer from "./component/Hooks/useReducer";
+import UseParams from "./component/Hooks/useParams";
+import UseLocation from "./component/Hooks/useLocation";
+import UseNavigat from "./component/Hooks/useNavigat";
 import Navbar from "./component/Navbar";
 
 const App = () => {
@@ -27,6 +30,9 @@ const App = () => {
           <Route path="/useState" element={<UseState mode={mode} toggleMode={toggleMode} />} />
           <Route path="/useEffect" element={<UseEffect mode={mode} toggleMode={toggleMode} />} />
           <Route path="/useReducer" element={<UseReducer mode={mode} toggleMode={toggleMode} />} />
+          <Route path="/useParams/:name" element={<UseParams mode={mode} toggleMode={toggleMode} />} />
+          <Route path="/useLocation" element={<UseLocation mode={mode} toggleMode={toggleMode} />} />
+          <Route path="/useLocation" element={<UseNavigat mode={mode} toggleMode={toggleMode} />} />
         </Routes>
       </Router>
     </>
