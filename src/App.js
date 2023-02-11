@@ -5,8 +5,9 @@ import UseEffect from "./component/Hooks/useEffect";
 import UseReducer from "./component/Hooks/useReducer";
 import UseParams from "./component/Hooks/useParams";
 import UseLocation from "./component/Hooks/useLocation";
-import UseNavigat from "./component/Hooks/useNavigat";
+import UseNavigate from "./component/Hooks/useNavigate";
 import Navbar from "./component/Navbar";
+import UseRef from "./component/Hooks/useRef";
 
 const App = () => {
   const [mode, setMode] = useState("light");
@@ -32,7 +33,8 @@ const App = () => {
           <Route path="/useReducer" element={<UseReducer mode={mode} toggleMode={toggleMode} />} />
           <Route path="/useParams/:name" element={<UseParams mode={mode} toggleMode={toggleMode} />} />
           <Route path="/useLocation" element={<UseLocation mode={mode} toggleMode={toggleMode} />} />
-          <Route path="/useLocation" element={<UseNavigat mode={mode} toggleMode={toggleMode} />} />
+          <Route path="/useNavigate" element={<UseNavigate mode={mode} toggleMode={toggleMode} />} />
+          <Route path="/useRef" element={<UseRef mode={mode} toggleMode={toggleMode} />} />
         </Routes>
       </Router>
     </>
