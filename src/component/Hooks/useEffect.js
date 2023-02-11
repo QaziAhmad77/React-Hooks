@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
+import UseLocation from "./useLocation";
 
 const UseEffect = (props) => {
   // const initialData = 15;
@@ -7,7 +9,8 @@ const UseEffect = (props) => {
 
   useEffect(() => {
     document.title = `Chats(${myNum})`;
-  });
+    alert("Hello");
+  }, []);
 
   return (
     <>
@@ -20,6 +23,13 @@ const UseEffect = (props) => {
             <span></span>
             <span></span>
             INCR
+          </div>
+          <div className="button2" onClick={() => (myNum > 0 ? setMyNum(myNum - 1) : setMyNum(0))}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            DECR
           </div>
         </div>
       </div>
