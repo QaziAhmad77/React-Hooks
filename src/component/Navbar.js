@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = (props) => {
   let location = useLocation();
@@ -40,6 +40,11 @@ const Navbar = (props) => {
           <li className="nav-item">
             <Link className={`nav-link ${location.pathname === "/useNavigate" ? "active" : ""}`} to="/useNavigate">
               useNavigate
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className={`nav-link ${location.pathname === "/useRef" ? "active" : ""}`} to="/useRef">
+              useRef
             </Link>
           </li>
         </ul>
